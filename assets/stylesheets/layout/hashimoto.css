@@ -1,0 +1,352 @@
+
+/* グリッド */
+.grid-container {
+  color: rgba(255, 255, 255, 0.835);
+}
+
+.grid-itemWrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.grid-itemLink1 {
+  grid-row: 1 / 3;
+  background-image: url("/assets/images/cate1b.jpg");
+  position: relative;
+}
+
+
+.grid-itemLink2 {
+  background-image: url("/assets/images/cate2b.jpg");
+  position: relative;
+}
+
+.grid-itemLink3 {
+  background-image: url("/assets/images/cate3b.jpg");
+  background-size: contain;
+  position: relative;
+}
+
+.grid-itemLink4 {
+  background-image: url("/assets/images/cate4_2b.jpg");
+  background-size: cover;
+  background-position: 10px;
+  position: relative;
+}
+
+.grid-itemLink5 {
+  grid-row: 2 / 4;
+  grid-column: 3 / 4;
+  background-image: url("/assets/images/cate7b.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.grid-itemLink6 {
+  background-image: url("/assets/images/cate5b.jpg");
+  position: relative;
+}
+
+.grid-itemLink7 {
+  background-image: url("/assets/images/cate6b.jpg");
+  position: relative;
+}
+
+.grid-itemLink1::after,
+.grid-itemLink2::after,
+.grid-itemLink3::after,
+.grid-itemLink4::after,
+.grid-itemLink5::after,
+.grid-itemLink6::after,
+.grid-itemLink7::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #141414df;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: block;
+}
+
+.grid-itemLink1:hover::after,
+.grid-itemLink2:hover::after,
+.grid-itemLink3:hover::after,
+.grid-itemLink4:hover::after,
+.grid-itemLink5:hover::after,
+.grid-itemLink6:hover::after,
+.grid-itemLink7:hover::after {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.grid-title,
+.grid-text {
+  position: absolute;
+  z-index: 50;
+}
+
+.grid-title {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 3px;
+}
+
+.grid-text {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 2px;
+}
+
+.grid-long {
+  top: 55%;
+}
+
+/* フッター */
+.footer {
+  background-color: #d9d9d9c7;
+  padding: 30px;
+  margin-top: 5px;
+}
+
+.f-menuList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.f-imageContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.f-imageWrapper {
+  width: 100%;
+}
+
+.f-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 796px) { /* pc */
+  .h-section {
+    position: relative;
+    height: 800px;
+  }
+
+    /* 背景 */
+  .background1-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+
+  .background1 {
+    background-color: #d9d9d9c7;
+    width: 27%;
+    height: 800px;
+  }
+
+  .background2-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+  }
+
+  .background2 {
+    background-color: #d9d9d9c7;
+    width: 100%;
+    height: 200px;
+  }
+
+  .grid-container {
+    width: 100%;
+    top: 10%;
+    left: 0%;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 200px 200px 200px;
+  }
+
+  .grid-itemLink4 {
+    background-position: 50%;
+  }
+
+  .grid-title {
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  .grid-text {
+    font-size: 11px;
+    font-weight: 300;
+  }
+
+  /* フッター */
+  .f-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .f-menuItem {
+    border-left: 1px solid;
+    padding-left: 20px;
+  }
+
+  .f-menuItem:nth-child(4){
+    border-right: 1px solid;
+    padding-right: 20px;
+  }
+
+  .f-companyName {
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: right;
+    font-family: 'Kadwa', serif;
+  }
+
+  .f-copyright {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Stick No Bills', sans-serif;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp */
+  .sp-none {
+    display: none;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .grid-itemLink1,
+  .grid-itemLink2,
+  .grid-itemLink3,
+  .grid-itemLink4,
+  .grid-itemLink5,
+  .grid-itemLink6,
+  .grid-itemLink7 {
+    display: block;
+    height: 70px;
+    margin: 5px 10px 0 10px;
+    background-size: cover;
+    background-position: 10%;
+  }
+
+  .grid-itemLink1 {
+    order: 1;
+  }
+
+  .grid-itemLink2 {
+    order: 3;
+  }
+
+  .grid-itemLink3 {
+    order: 7;
+  }
+
+  .grid-itemLink4 {
+    order: 4;
+  }
+
+  .grid-itemLink5 {
+    order: 2;
+  }
+
+  .grid-itemLink6 {
+    order: 5;
+  }
+
+  .grid-itemLink7 {
+    order: 6;
+  }
+
+  .grid-title {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 3px;
+    font-size: 23px;
+    font-family: 'Klee One', cursive;
+  }
+
+  .grid-text {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
+
+  .grid-long {
+    top: 65%;
+  }
+
+  .f-menuList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 10px;
+  }
+
+  .f-menuItem {
+    width: 35%;
+  }
+
+  .f-imageContainer {
+    justify-content: center;
+    border-top: 1px solid;
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+  .f-imageWrapper {
+    width: 8%;
+  }
+
+  .f-companyName {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Kadwa', serif;
+  }
+
+  .f-copyright {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-family: 'Stick No Bills', sans-serif;
+  }
+
+}

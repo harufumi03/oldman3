@@ -9,10 +9,14 @@
   <title>webページ制作|OldPage</title>
   <meta name="description" content="webページ制作|MyPage">
   <link rel="stylesheet" href="assets/stylesheets/app.css">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <!-- reset.css destyle -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   <script src="assets/javascripts/index.js" defer></script>
-</head>
+  <!-- GoogleフォントAPI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kadwa&family=Klee+One&family=M+PLUS+1:wght@400;500;700&family=M+PLUS+1p:wght@100;300;400&family=M+PLUS+2:wght@400;700&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@700&family=Poppins:ital,wght@0,700;1,200&family=Stick+No+Bills&display=swap" rel="stylesheet"></head>
 <body>
   <header>
   </header>
@@ -248,8 +252,96 @@
 
 
 <!-- 橋本エリア========================================================================================================= -->
+    <div class="h-section">
+      <div class="background1-container sp-none">
+        <div class="background1"></div>
+        <div class="background1"></div>
+        <div class="background1"></div>
+      </div>
+      <div class="background2-container sp-none">
+        <div class="background2"></div>
+        <div class="background2"></div>
+        <div class="background2"></div>
+      </div>
+      <div class="grid-container">
+        <a href="#" class="grid-itemLink1">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">Sofa</p>
+            <p class="grid-text grid-long">ソファを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink2">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">DiningTable</p>
+            <p class="grid-text">ダイニングテーブルを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink3">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">Light Furniture</p>
+            <p class="grid-text">軽家具・小物家具を探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink4">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">DiningChair</p>
+            <p class="grid-text">ダイニングチェアを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink5">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">LivingBoard</p>
+            <p class="grid-text grid-long">リビングボードを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink6">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">DiningBoard</p>
+            <p class="grid-text">ダイニングボードを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink7">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">LivingTable</p>
+            <p class="grid-text">リビングテーブルを探す</p>
+          </div>
+        </a>
+      </div>
+    </div>
   </main>
-  <footer>
+  <footer class="footer">
+    <div class="f-container">
+      <!-- フッターメニュー -->
+      <div class="f-menu">
+        <ul class="f-menuList">
+          <li class="f-menuItem">
+            <a href="#">会社概要</a>
+          </li>
+          <li class="f-menuItem">
+            <a href="#">サービス利用規約</a>
+          </li>
+          <li class="f-menuItem">
+            <a href="#">個人情報保護方針</a>
+          </li>
+          <li class="f-menuItem">
+            <a href="#">特定商取引法に基づく表記</a>
+          </li>
+        </ul>
+      </div>
+      <!-- twitter&Instagramロゴ -->
+      <div class="f-imageContainer">
+        <div class="f-imageWrapper">
+          <img class="f-image" src="/assets/images/Vector.png">
+        </div>
+        <div class="f-imageWrapper">
+          <img class="f-image" src="/assets/images/Vector2.png">
+        </div>
+      </div>
+    </div>
+    <p class="f-companyName">AWESOME.co</p>
+    <small class="f-copyright">
+      Copyright &copy; 2023 Awenew
+    </small>
   </footer>
 </body>
 </html>
