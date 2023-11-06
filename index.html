@@ -9,14 +9,98 @@
   <title>webページ制作|OldPage</title>
   <meta name="description" content="webページ制作|MyPage">
   <link rel="stylesheet" href="assets/stylesheets/app.css">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <!-- reset.css destyle -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   <script src="assets/javascripts/index.js" defer></script>
-</head>
+  <!-- GoogleフォントAPI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kadwa&family=Klee+One&family=M+PLUS+1:wght@400;500;700&family=M+PLUS+1p:wght@100;300;400&family=M+PLUS+2:wght@400;700&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@700&family=Poppins:ital,wght@0,700;1,200&family=Stick+No+Bills&display=swap" rel="stylesheet"></head>
 <body>
-  <header>
+  <header class="header">
+    <div class="header__inner inner">
+      <div class="drawer">
+        <div class="drawer-icon-area">
+          <input class="drawer-checkbox" type="checkbox">
+          <label for="drawer-checkbox" class="drawer-icon">
+            <span class="drawer-bar"></span>
+            <span class="drawer-menu">MENU</span>
+          </label>
+        </div>
+        <div class="drawer__content">
+          <div class="drawer__inner">
+            <div class="drawer__nav">
+              <ul class="drawe__lists">
+                <li class="drawe__list">
+                  <a href="#" class="drawer__link">お知らせ</a>
+                </li>
+                <li class="drawer__list">
+                  <a href="#" class="drawer__link">商品を探す</a>
+                </li>
+                <li class="drawer__list">
+                  <a href="#" class="drawer__link">ガイド</a>
+                </li>
+                <li class="drawe__list">
+                  <a href="#" class="drawer__link">お問い合わせ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="header__logo">
+        <h1 class="header__title">
+          <img src="./assets/images/image 2.png" alt="">
+        </h1>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__lists">
+          <li class="header__list">
+            <a href="#" class="header__link">お知らせ</a>
+          </li>
+          <li class="header__list">
+            <a href="#" class="header__link">商品を探す</a>
+          </li>
+          <li class="header__list">
+            <a href="#" class="header__link">ガイド</a>
+          </li>
+          <li class="header__list">
+            <a href="#" class="header__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form action="" class="form">
+        <input class="header-nav__search-form" type="search" placeholder="何をお探しですか？">
+        <button class="header-nav__search-button">
+          <img src="./assets/images/🦆 icon _Search_ (2).png" alt="">
+        </button>
+      </form>
+      
+      <ul class="header-logo__lists">
+        <li class="header-logo__list">
+          <a href="#" class="header-logo__login">
+            <img src="./assets/images/image 3.png" alt="">
+            <span class="header__login">ログイン</span>
+          </a>
+        </li>
+        <li class="header-logo__list">
+          <a href="#" class="header-logo__cart">
+            <img src="./assets/images/🦆 icon _Shopping Cart Arrow Down_.png" alt="">
+            <span class="header__cart">カート</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="header-sp-cart">
+        <img src="./assets/images/carbon_shopping-cart.png" alt="">
+      </div>
+    </div>
   </header>
+  <!-- /.header -->
   <main>
+<<<<<<< HEAD
 
 
 
@@ -309,8 +393,132 @@
 
 
 <!-- 橋本エリア========================================================================================================= -->
+    <div class="h-section">
+      <div class="background1-container sp-none">
+        <div class="background1"></div>
+        <div class="background1"></div>
+        <div class="background1"></div>
+      </div>
+      <div class="background2-container sp-none">
+        <div class="background2"></div>
+        <div class="background2"></div>
+        <div class="background2"></div>
+      </div>
+      <div class="grid-container">
+        <a href="#" class="grid-itemLink1">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">Sofa</p>
+            <p class="grid-text grid-long">ソファを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink2">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">DiningTable</p>
+            <p class="grid-text">ダイニングテーブルを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink3">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">Light Furniture</p>
+            <p class="grid-text">軽家具・小物家具を探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink4">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">DiningChair</p>
+            <p class="grid-text">ダイニングチェアを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink5">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">LivingBoard</p>
+            <p class="grid-text grid-long">リビングボードを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink6">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">DiningBoard</p>
+            <p class="grid-text">ダイニングボードを探す</p>
+          </div>
+        </a>
+        <a href="#" class="grid-itemLink7">
+          <div class="grid-itemWrapper">
+            <p class="grid-title">LivingTable</p>
+            <p class="grid-text">リビングテーブルを探す</p>
+          </div>
+        </a>
+      </div>
+    </div>
+=======
+    <section class="attention">
+      <div class="attention__inner inner">
+        <h2 class="attention__title">注目ワード</h2>
+        <ul class="attnword__lists">
+          <li class="attnword__list">
+            <a href="#" class="attnword__link">🔍ソファベッド</a>
+          </li>
+          <li class="attnword__list">
+            <a href="#" class="attnword__link">🔍おしゃれカウチ</a>
+          </li>
+          <li class="attnword__list">
+            <a href="#" class="attnword__link">🔍ソファベッド</a>
+          </li>
+          <li class="attnword__list">
+            <a href="#" class="attnword__link">🔍無駄のないソファ</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /.attention -->
+
+    <ul class="slider__lists">
+      <li class="slider__list">
+        <img src="./assets/images/paul-weaver-nWidMEQsnAQ-unsplash 1.png" alt="">
+      </li>
+      <li class="slider__list">
+        <img src="./assets/images/living-room-2569325_640 1.png" alt="">
+      </li>
+      <li class="slider__list">
+        <img src="./assets/images/couch-447484_640 1.png" alt="">
+      </li>
+    </ul>
+>>>>>>> main
   </main>
-  <footer>
+  <footer class="footer">
+    <div class="f-container">
+      <!-- フッターメニュー -->
+      <div class="f-menu">
+        <ul class="f-menuList">
+          <li class="f-menuItem">
+            <a href="#">会社概要</a>
+          </li>
+          <li class="f-menuItem">
+            <a href="#">サービス利用規約</a>
+          </li>
+          <li class="f-menuItem">
+            <a href="#">個人情報保護方針</a>
+          </li>
+          <li class="f-menuItem">
+            <a href="#">特定商取引法に基づく表記</a>
+          </li>
+        </ul>
+      </div>
+      <!-- twitter&Instagramロゴ -->
+      <div class="f-imageContainer">
+        <div class="f-imageWrapper">
+          <img class="f-image" src="/assets/images/Vector.png">
+        </div>
+        <div class="f-imageWrapper">
+          <img class="f-image" src="/assets/images/Vector2.png">
+        </div>
+      </div>
+    </div>
+    <p class="f-companyName">AWESOME.co</p>
+    <small class="f-copyright">
+      Copyright &copy; 2023 Awenew
+    </small>
   </footer>
+
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>
