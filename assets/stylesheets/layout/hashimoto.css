@@ -67,7 +67,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #141414df;
+  background-color: #141414c1;
   transition: background-color 0.3s;
   position: absolute;
   top: 0%;
@@ -89,6 +89,7 @@
 .grid-text {
   position: absolute;
   z-index: 50;
+  color: #fff;
 }
 
 .grid-title {
