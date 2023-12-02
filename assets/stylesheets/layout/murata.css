@@ -99,6 +99,10 @@
     position: relative;
   }
 
+  .styling-image {
+    width: 100%;
+  }
+
   .styling-button {
     position: absolute;
     top: 75%;
