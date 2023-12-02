@@ -16,24 +16,24 @@
 
 .grid-itemLink1 {
   grid-row: 1 / 3;
-  background-image: url("/assets/images/cate1b.jpg");
+  background-image: url("/oldman3/assets/images/cate1b.jpg");
   position: relative;
 }
 
 
 .grid-itemLink2 {
-  background-image: url("/assets/images/cate2b.jpg");
+  background-image: url("/oldman3/assets/images/cate2b.jpg");
   position: relative;
 }
 
 .grid-itemLink3 {
-  background-image: url("/assets/images/cate3b.jpg");
+  background-image: url("/oldman3/assets/images/cate3b.jpg");
   background-size: contain;
   position: relative;
 }
 
 .grid-itemLink4 {
-  background-image: url("/assets/images/cate4_2b.jpg");
+  background-image: url("/oldman3/assets/images/cate4_2b.jpg");
   background-size: cover;
   background-position: 10px;
   position: relative;
@@ -42,18 +42,18 @@
 .grid-itemLink5 {
   grid-row: 2 / 4;
   grid-column: 3 / 4;
-  background-image: url("/assets/images/cate7b.jpg");
+  background-image: url("/oldman3/assets/images/cate7b.jpg");
   background-size: cover;
   position: relative;
 }
 
 .grid-itemLink6 {
-  background-image: url("/assets/images/cate5b.jpg");
+  background-image: url("/oldman3/assets/images/cate5b.jpg");
   position: relative;
 }
 
 .grid-itemLink7 {
-  background-image: url("/assets/images/cate6b.jpg");
+  background-image: url("/oldman3/assets/images/cate6b.jpg");
   position: relative;
 }
 
